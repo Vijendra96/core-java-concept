@@ -1,0 +1,13 @@
+1. 	Non static member cant be used in any static context straight away.
+2. 	We should use non static member inside a static context along with the reference of an object.
+3. 	new H(); ==> object creation statement to H class
+4. 	object creation should be with a new operator.
+5. 	H ref ==> reference variable creation.
+6. 	We can access any non static member by using reference variable
+7. 	all objects are creating in the heap memory.
+8. 	non static members will be loading to the memory for every object
+9. 	every object should have a reference to access the the object members (non static members)
+10. 	object is also called as an instance
+11. 	all non static members are also called as an instance members.
+12. 	all classes are derived data type. so, H comes under derived data type.ref is a H data type. so, ref is a derived data type variable.
+	all derived type variables can refer to an object.so, ref is refering to H type object. ref is a reference variable.

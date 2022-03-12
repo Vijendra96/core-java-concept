@@ -1,0 +1,9 @@
+class K 
+{
+	public static void main(String[] args) 
+	{
+		int i = 0;
+		System.out.println(i++ == 1 || i++ == 2); //false
+		System.out.println(i);  // 2
+	}
+}

@@ -1,0 +1,31 @@
+1.	by default, all assert statements are disabled.
+2.	to enable assert statments, we have to supply one VM argument (-ea or -enableassertions).
+3.	we can also disable assertions explicitely by using another VM argument (-da or -disableassertions).
+4.	enabling/disabling can be done
+	1.  class wise.
+	2.  package and all of subpackages wise.
+	3.  entire execution wise.
+----------------------------------------------------------------------------------------------------------------------------------------------------
+5.	assertion is almost same as throw. it give runtime Exception occured flow terminates, if rule will failled.
+
+6.	difference between assert and throw ==>
+	1.  we can enabling and disabling assertion explicitely while throw executing everytime there is no need of enabling and desabling.
+	2.  throw should be the last statement of the current block while assert statement can be anywhere.
+	3.  by using throw, we can specify any Exception eventhough any Error, while assert is only for AssertionError.
+----------------------------------------------------------------------------------------------------------------------------------------------------
+java -cp ../classes -ea pack1.I
+java -cp ../classes -ea:pack2.K pack1.I
+java -cp ../classes -ea -da:pack1.I pack1.I
+java -cp ../classes -ea:pack1... -da:pack1.I pack1.I
+java -cp ../classes -ea:pack2... -da:pack1... pack1.I
+java -cp ../classes -ea A
+java -cp ../classes -enableassertions A
+
+to check assert was an identifier 
+javac -d ../classes -source 1.3 L.java
+----------------------------------------------------------------------------------------------------------------------------------------------------
+7.	in the assertion 'void' type method not allowed, becouse of it return nothing.
+8.	method can be rather than 'void'.
+9.	assertions are introduced in JDK1.4.
+10.	assert is a keyword from JDK1.4 onword.
+11.	before JDK 1.4 assert was using an an identifier.

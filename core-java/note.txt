@@ -1,0 +1,40 @@
+app1	:	Hello world Programme. 							
+app2	:	literals(string,char,int,boolean,doual).			
+app3	:	println(); and print();. 					
+app4 	:	local variables.       						
+app5	:	unary operators (increament and decreament). 			
+app6	:	concatination.  						
+app7	:	logical operator (arithmatic operators)				
+app8	: 	command line arguments. 					
+app9	:	binary representation.						
+app10	:	bitwise operators.						
+app11	:	boolean operators.						
+app12	:	if block.    							
+app13	:	nested if block.						
+app14	:	else block.
+app15	:	if - else block inside an if block.
+app16	:	if - else block inside an else block.
+app17	:	ternary operators.
+app18	:	switch-case-default.
+app19	:	for-loop.
+app20	:	for-each-loop (enhanced for-loop).
+app21	:	while-loop.
+app22	:	do-while loop.
+app23	:	methods.
+app24	:	static attribute or field or property or global variable.
+app25 	:	static initialization blocks(SIB).
+app25A	:	static members using another class.
+app26	:	Illegal Forward Reference (IFR).
+app27	:	class and object.
+app28	:	this keyword.
+app29	:	constructor.
+app30	:	inheritance.
+app31	:	packages.
+app32	:	private access level.
+app33	:	default access level.
+app34	:	protected and public access level.
+app35	:	abstarct classes.(most important for interview)
+app36	:	assertions.
+app37	:	interfaces.
+app38	:	wrapper class.
+app39	:	string.

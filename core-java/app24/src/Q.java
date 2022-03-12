@@ -1,0 +1,24 @@
+class Q 
+{
+	static int i = test();
+
+	static int test()
+	{
+		System.out.println("from test begin");
+		main(null);
+		System.out.println("from test end");
+		return 10;
+	}
+
+	public static void main(String[] args) 
+	{
+		System.out.println("from main");
+	}
+}
+
+/*
+from test begin
+from main
+from test end
+from main
+*/

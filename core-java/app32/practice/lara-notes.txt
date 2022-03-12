@@ -1,0 +1,10 @@
+1. private members should be used in the current class only.
+2. one class private members can't be used in another class.
+3. private members of super class not inheriting to subclass.
+4. even from the sub class also we cant access the private members of a super class.
+5. We cant develop a sub class if super class containing only private constructors.
+6. no access level can be used for SIB and IIB
+7. no name to SIB, no name to IIB so we cant call IIB or SIB explicitely.
+8. We are not able to call IIB and SIB, then what is the need of access level.
+9. outer class cant be private.
+

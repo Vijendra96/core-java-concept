@@ -1,0 +1,41 @@
+=========================================== Default Access Modifier ==========================================================
+
+	If you don't use any modifier, it is treated as default by default. The default modifier is accessible only within package. It cannot be 		accessed from outside the package. It provides more accessibility than private. But, it is more restrictive than protected, and public.	
+
+	If we do not explicitly specify any access modifier for classes, methods, variables, etc, then by default the default access modifier is 		considered. 
+	For example,
+
+	package pack1;
+	class A
+	{
+    		void message()
+		{
+        	System.out.println("This is a message");
+    		}
+	}
+
+	Here, the A class has the default access modifier. And the class is visible to all the classes that belong to the pack1 package. 			However, if we try to use the A class in another class outside of pack1 we will get a compilation error.
+	for example:
+
+	//save by A.java  
+	package pack1;  
+	class A
+	{  
+  	   void test()
+	   {
+		System.out.println("from test()");}  
+	   }  
+
+	//save by B.java  
+	package pack2;  
+	import pack.*;  
+	class B
+	{  
+ 	   public static void main(String args[])
+	   {  
+             A obj = new A();//Compile Time Error  
+   	     obj.test();//Compile Time Error  
+  	   }  
+         }  
+
+	In the above example, the scope of class A and its method test() is default so it cannot be accessed from outside the package.

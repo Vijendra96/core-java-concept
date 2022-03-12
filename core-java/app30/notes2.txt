@@ -1,0 +1,37 @@
+1.	every member of super class inheriting to sub class.
+2.	constructors, IIBs and SIBs are not inheriting to the sub class
+3.	every class should have a min one constructor. if we are not developing any constructor, then compiler is developing one default 			constructor.default constructor is always no arg constructor.
+4.	in every constructor body, first statement should be either super calling statement or this calling statement.
+5.	super calling statements ==>
+
+ 	super();
+ 	super(10);
+ 	super(1, 0);
+ 	super("abc");
+ 	super(10, "abc");
+
+6.	this calling statements ==>
+
+	this();
+	this(10);
+	this(1, 0);
+	this("abc");
+	this(10, "abc");
+
+7.	if at all constructor's first statement is not a super calling statement and not a this calling statement, then compiler keeps super() as a 		first statement in the constructor's body.
+8.	super(); is a calling statement to super class no arg constructor.
+9.	super class constructor not inheriting to sub class. sub class constructor only calling to super class constructor.
+10.	if there is a class without extends, then compiler keeps extends Object. Object is a built-in class and available in the java.lang.package. 		It contains the common methods which are required for every class.
+11.	inside an Object class there is only no arg constructor without super calling statement.
+12.	Object class is compiled by different comiler and not incorporated super() statement in a constructor's body.
+13.	Object class is a super most class for every class. Object class members inherited to every class. All members of an Object class available 		in every class.
+14.	constructor chain: chain of constructors involving while one object is creating to any perticular class. one constructor from a class to 		which object is creating, one constructor from a super class of a class to which object is creating, one constructor from a super class to 		super class of a class to which object is creating, like wise it continues till to Object class.
+15.	by default only one constructor will be executing from any class which is involving in the constructor chain
+16.	by using this calling statement we can achieve execution of multiple constructors from any class which is involving in the
+	constructor chain
+17.	in any object creation, whichever constructor involving in the constructor chain, it is executing only one time. not more than one time.
+18.	executing same constructor more than one time to the same object creation doesn't required.
+19.	all IIBs statments are moving into constructor body after super calling statement.
+20.	no IIBs inside a class file. content of IIB moving into every constructor, if constructor's first statement is super calling statement.
+21.	IIB statements are not incorporating inside a constructor, if constructor's first statement is this calling statement.
+22.	inheritance also called as is-a relation

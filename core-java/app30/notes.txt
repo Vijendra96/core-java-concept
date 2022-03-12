@@ -1,0 +1,58 @@
+=========================== INHERITANCE THEORY========================================
+
+
+1.	main goal of encapsulation is a grouping together.
+2.	inheritance is a reusability of code.
+3.	constructors, SIBs and IIBs are not involving in inheritance. means these three are not inherited.
+
+	contracts by the compiler ========>
+1.	every class shoud have a minimum one constructor, if there is a class without a constructor the compiler will provide default constructor,
+	default constructor is always no argument constructor.
+2.	every constructor's first statement should be either super() calling statement or this() calling statement. if there is no super() calling 
+	or this() calling statement as a first statement in the constructor then compiler develops first stetement as a super() statement.
+
+Note: 	superclass costructors are not inheriting to the subclass constructor but subclass constructor giving a call to supercass constructor
+	through super();.
+
+3.	if there is a class without extends, then compiler keeps extends with an object class(it is in class file not java file).
+	example:
+	class G extends Object
+	{
+	   G()
+	   {
+              super();
+	      System.out.println("G()");
+	   }
+	}
+	class H extends G
+	{
+           H()
+	   {
+	      super();
+	      System.out.println("H()");
+	   }
+	   public static void main(String[] args) 
+	   {
+	     H h1 = new H();
+	   }
+	}
+
+Note:	1. only attributes, and methods can be inheriting.
+	2. constructors, IIB and SIB can be not ingeriting.
+
+4.	all IIB definations incorporeting in every constructors body after super() statement.
+	in the other way, every IIb block is moving inside the constructor after super().IIB content incorporeting in the constructor immediately
+	after super() statement.
+	example:
+	a()
+	{
+	   super();
+	   IIB;
+	   SOP;
+	}
+        
+Note:	1.  IIBs are executing one time for on object creation.
+	2.  IIB execution is object wise not constructor wise.
+	3.  all IIB defination blocks are incorporeting inside a constructor, if first statement is super() calling statement.
+	4.  no IIB defination blocks are incorporeting inside a constructors if the first statement is this() calling statement.
+	5.  for one object creation, IIB executes only one time.

@@ -1,0 +1,12 @@
+important points on protected and public access levels :
+
+1. private usage within the same class
+2. private no inheritance
+3. default usage within the same package
+4. default inheritance to subclasses of within the same package
+5. protected usage within the same package
+6. protected inheriting to any subclass. no matter of subclass is in the same package or in the different package. It can inherit to any level of        subclasses.it acts as a private while inheriting to subclass of another package. it should be protected within the subclass while it is
+   inheriting to subclass of another package. Actual protected meaning is coming into picture while it is inheriting to subclass of another package.
+7. public usage can be anywhere.
+8. public inheriting to any subclass. no matter of subclass is in the same package or in the different package. No restrictions incase of public.
+9. private < default < protected < public

@@ -1,0 +1,7 @@
+1. 	IIB => Instance Initialization Block
+2. 	IIB executes for every object creation. No matter of which constructor using while object is creation, IIB executes for every object 		creation.
+3. 	IIB executes only one time for one object cration. Eventhough multiple constructors are involving while one object is creating, IIB executes 		one time only.
+1. 	IIB executes only one time for one object cration. Eventhough multiple constructors are involving while one object is creating, IIB
+	executes one time only.
+2. 	IIB execution is object wise not a constructor wise.
+1. 	static members are loading while loading a class itself. Thats why we can use static members anywhere in the class. Usage can be inside a 		constructor or IIB or SIB or any type of method. 

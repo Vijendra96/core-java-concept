@@ -1,0 +1,61 @@
+   	constructor, constructor overloading, this calling statmenet ====>
+
+1. 	should have same as class name.
+2. 	should not have a return type.
+3. 	executes automatically while object is creating.
+4. 	its a non static definition block.
+5. 	it should not be a static
+6. 	constructors are used to construct any thing related to an object.it can be providing a specific values to object members.
+7. 	inside a constructor body ---->
+	1.	we can develop any number of statmenets
+	2. 	we can develop any type of statmenets
+	3. 	we can connect to any external systems to get the data which is required for object members.
+8. 	diff between methods and constructors ---->
+	1. 	method can have any name. it can be even class name also.constructor should have a name as only class name.
+	2. 	method should have a return type.constructor should not have a return type.
+	3. 	the goal of a method is developing any task which can be reused again and again.the goal of a constructor is constructong any
+		thing to an object while creating an object. constructor executes only one time for one object. not again and again
+	4. 	method can be static or non static.constructor always non static only.
+9. 	diff between SIB and constructor ---->
+	1. 	SIB executes automatically while class is loading.construcr executes automatically while object is creating.
+	2. 	SIB mainly used for constructing any thing related to class memebrs (static members)constructor mainly used for constructing 				any thing related to object memebrs (non static members)
+	3. 	SIB executes only one time for entire execution.constructor executes only one time for one object creation.If you create 10 				objects, then constructor executes 10 times.
+10. 	constructor can take any number of arguments.
+11.	constructor can take any type of arguments.
+12.	we can initialize object members through constructor arguments.
+13.	choose constructor argument names as a attribute names to avoid a confusion while assigning argument value to the attribute.
+14.	use "this" to differentiate local argument and global attribute which are having same name.
+15.	class can have any number of constructors.
+16.	while developing multiple constructores in the same class,
+	1. 	choose the difference in the number of arguments (or)
+	2. 	choose the difference in the data type of any one argument
+17. 	developing multiple constructors in the same class by choosing the difference in the number of arguments (or) order in the argument data 		type is called as a constructor overloading.
+18. 	constructor's argument list, data types and order can be called as construdtor signature.
+19. 	developing multiple constructors in the same class by choosing the difference in the constructor signature is called as a constructor 			overloading.
+20. 	any number of constructors can be developed as long as signature varying.
+21. 	we can use same constructor to create any number of objects.
+22. 	constructor overloading is used to provide multiple ways to object creation.
+23. 	by default only one constructor executing for one object creation.
+24.	class can have any number of constructors. But while object is creating, only the specified constructor will execute by default. Not all the 		constructors.
+25. 	attribute values (or) instance variable values are considered as object state.
+26.	state of the object can be determined through instance variable values. If one instance variable changes, then the whole object state 			changes.
+
+27. 	this() ==> treat as this calling statement
+ 	this(90) ==> treat as this calling statement
+28. 	this calling statement is used to call one constructor from another constructor of the same class. 
+ 	this() ==> its a calling statement to no argument constructor of the same class.
+ 	this(10) ==> its a calling statement to int argument constructor of the same class.
+	this(10, 20) ==> its a calling statement to two int argument constructor of the same class.
+ 	this(10, 1.5) ==> its a calling statement to the constructor of the same class which is taking int and double arguments.
+
+29. 	by default only one constructor will execute for one object creation. But by using this calling statement we can achieve multiple 			constructors execution.
+30. 	this calling statement should be as a first statement in the constructor body. should not be after first statement.
+31.	this calling statement should not be inside a method body.
+32.	we can't achieve recursive/cyclic invocation through this calling statement.if we provide cyclic invocation, then compilation error.
+33.	argument constructors are always advisable. we can supply values to the object memebrs while creating an object itself.
+
+34.	we should specify any one of the available constructor while object is creating.
+35.	if there is a class without constructors, then compilor provides default constructor while compiling.
+36. 	default constructor is always a no arg constructor.
+37. 	every class should have a min one constructor.if any class is developed without any constructor, then compiler developing no arg constructor 		as a default constructor in the class file.
+

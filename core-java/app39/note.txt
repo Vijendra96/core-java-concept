@@ -1,0 +1,8 @@
+1.	if create a string object without 'new' operator then it creats in constant pool.
+2.	if create a string object with 'new' operator then it creates outsite the constant pool.
+3.	in the constant pool there is no duplicate string object, all are unique object(that is why s1 and s2 refering to the same object(class A)).
+4.	== operator returns true if reference pointing into the same object.
+5.	== operator checking memory location only.
+6.	equals() method checking content only.
+8.	'new' keyword creates always new object.
+9.	'+' operator use 'new' operator to create string object. if any one operand is a reference variable(class D).

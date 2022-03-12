@@ -1,0 +1,35 @@
+1.	method without defination should be declared as an abstract.
+2.	if class containing minimum one abstract method,then it should be declared as an abstract class.
+3.	abstract keyword should not be for defined methods.
+4.	undefined methods (declared methods) should have an abstract keyword.
+5.	abstract class can have any number of abstract methods.
+6.	If you are unable to implement anything, then declare that as an abstract. incompletness should be represented through an abstract.
+7.	we can't create an object to an abstract class.
+8.	but we can create a reference variable.
+9.	we can keep using an abstract class for the datatype purpose.
+10.	To achieve inheritance we required an encapsulation.
+11.	to achieve abstraction we should required an inheritance.
+12.	we can run an abstract class if it contains main method.
+13.	to call a static method, we dont required an object.
+14.	we can use static members of an abstract class without developing a subclass.
+15.	if class containing min one abstract method,then it should be declared as an abstract class.
+16.	eventhough no abstract methods, we can declare a class as an abstract.
+17.	what we are achieving while declaring a class as an abstract eventhough no abstract methods?.restricting an object creation. no one can 		create an object to an abstract class.
+18.	its not a mandatory to declare a class as an abstract if no abstract methods inside a class. its upto you. if you want restricting an object
+	creation,then only declare a class as an abstract.
+19.	we can't create an object to an abstract class,eventhough no abstract methods inside.
+20.	every class should have a min one constructor,even inside an abstract class also.
+21.	if we didn't develop any constructor, then compiler will provide a default constructor.
+21.	no class can be 100% abstract. eventhough every method is an abstract, class is not 100% abstract. the reason is, there is concrete 			constructor.
+22.	even in the abstract class also, compiler develops default constructor if we didn't provide.
+23.	we can develop any number of constructors inside an abstract class.
+24.	constructor of an abstract class executes while object is creating to any subclass which is concrete (non abstract).
+25. 	we can't declare constructor as an abstract. the reason is constructors are not inheriting to subclasses. if not inheriting to subclass, then
+	where we can provide an implementation?
+26. 	static methods can't be declared as an abstract.
+27.	final methods can't be declared as an abstract.
+28.	final class can't be declared as an abstract.
+29.	attributes can't be declared as an abstract.
+
+
+
